@@ -18,7 +18,7 @@ function App() {
     <UserProvider>
       <NavbarComponent />
       <Routes>
-        <Route path='/PROYECTO-ECOMMERCE-ClasicsShoes/' element={<HomeRoute />} />
+        <Route path='/' element={<HomeRoute />} />
         <Route path='/PROYECTO-ECOMMERCE-ClasicsShoes/*' element={<HomeRoute />} />
         <Route path='/PROYECTO-ECOMMERCE-ClasicsShoes/login' element={<Login />} />
         <Route path='/PROYECTO-ECOMMERCE-ClasicsShoes/signup' element={<SignUp />} />
