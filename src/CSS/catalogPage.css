@@ -1,0 +1,39 @@
+/* catalogoPage.css */
+
+.catalog-container {
+  padding: 40px;
+}
+
+.card-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); 
+  gap: 20px;
+}
+
+.card-item {
+  width: 100%; 
+  margin-bottom: 1rem;
+}
+
+.card-item img {
+  display: block;
+  margin: 0 auto; 
+}
+
+.card-body {
+  text-align: center; 
+}
+
+.card-title {
+  font-style: italic; 
+  font-size: 2rem;
+}
+
+.card-text {
+  font-size: 1.2rem; 
+}
+
+.button {
+  font-size: 1rem; 
+}
+

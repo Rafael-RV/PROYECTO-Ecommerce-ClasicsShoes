@@ -1,0 +1,37 @@
+/* Footer.css */
+
+.footer {
+  background-color: #f0e8d9; /* Fondo en un tono amarillo pálido */
+  color: #5e5e5e; /* Texto en gris oscuro para contraste */
+  padding-top: 20px;
+  margin-bottom: 0;
+}
+
+.footer h4,
+.footer h5 {
+  color: #7d7d7d; /* Gris más claro para encabezados */
+}
+
+.footer p {
+  font-size: 14px;
+  color: #999; /* Gris más oscuro para el texto principal */
+}
+
+.footer ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer ul li {
+  margin-bottom: 8px;
+}
+
+.footer a {
+  color: #7d7d7d; /* Gris para los enlaces */
+  text-decoration: none;
+}
+
+.footer a:hover {
+  text-decoration: underline;
+  color: #5e5e5e; /* Gris oscuro al pasar el ratón para destacar */
+}

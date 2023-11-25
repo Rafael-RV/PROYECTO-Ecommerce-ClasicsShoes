@@ -1,0 +1,36 @@
+/* Estilos para DetailsShoes.css */
+
+/* Contenedor principal */
+.container {
+  margin-top: 20px;
+}
+
+/* Título */
+h2 {
+  font-size: 36px;
+  color: #333;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* Detalles del producto */
+.row {
+  margin-top: 20px;
+}
+
+.row img {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 20px;
+  border-radius: 8px; /* Añadido para bordes redondeados en la imagen */
+}
+
+.row p {
+  font-size: 20px;
+  margin-bottom: 15px;
+  color: #555;
+  line-height: 1.5;
+  margin-top: 30px; /* Añadido para un espaciado mejorado */
+}
+
+/* Otros estilos según tu estructura de datos */
