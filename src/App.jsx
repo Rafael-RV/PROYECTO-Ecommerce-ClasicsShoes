@@ -25,7 +25,7 @@ function App() {
         <Route path='/PROYECTO-ECOMMERCE-ClasicsShoes/catalogo' element={<CatalogoRoute />} />
         <Route path='/PROYECTO-ECOMMERCE-ClasicsShoes/detalles-producto/:productId' element={<Details />} />
         <Route path='/PROYECTO-ECOMMERCE-ClasicsShoes/miPerfil' element={<PerfilRoute />} />
-        <Route path='/PROYECTO-ECOMMERCE-ClasicsShoes/*' element={<HomeRoute />} />
+  
 
       </Routes>
       <Footer />
