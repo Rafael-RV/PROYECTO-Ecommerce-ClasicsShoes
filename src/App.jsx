@@ -18,14 +18,14 @@ function App() {
     <UserProvider>
       <NavbarComponent />
       <Routes>
-        <Route path='/' element={<HomeRoute />} />
-        <Route path='/*' element={<HomeRoute />} />
-        <Route path='/login' element={<Login />} />
-        <Route path='/signup' element={<SignUp />} />
-        <Route path='/catalogo' element={<CatalogoRoute />} />
-        <Route path='/detalles-producto/:productId' element={<Details />} />
-        <Route path='/miPerfil' element={<PerfilRoute />} />
-        <Route path='/*' element={<HomeRoute />} />
+        <Route path='/PROYECTO-ECOMMERCE-ClasicsShoes/' element={<HomeRoute />} />
+        <Route path='/PROYECTO-ECOMMERCE-ClasicsShoes/*' element={<HomeRoute />} />
+        <Route path='/PROYECTO-ECOMMERCE-ClasicsShoes/login' element={<Login />} />
+        <Route path='/PROYECTO-ECOMMERCE-ClasicsShoes/signup' element={<SignUp />} />
+        <Route path='/PROYECTO-ECOMMERCE-ClasicsShoes/catalogo' element={<CatalogoRoute />} />
+        <Route path='/PROYECTO-ECOMMERCE-ClasicsShoes/detalles-producto/:productId' element={<Details />} />
+        <Route path='/PROYECTO-ECOMMERCE-ClasicsShoes/miPerfil' element={<PerfilRoute />} />
+        <Route path='/PROYECTO-ECOMMERCE-ClasicsShoes/*' element={<HomeRoute />} />
 
       </Routes>
       <Footer />
