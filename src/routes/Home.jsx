@@ -4,7 +4,7 @@ import { CatalogButton } from '../components/CatalogButton/CatalogButton'
 import AboutUs from '../components/AboutUS/AboutUs'
 
 
-export const HomeRoute = () => {
+export const Home = () => {
   return (
     <div>
       <AboutUs/>

@@ -23,7 +23,7 @@ export const CatalogoPage = () => {
                   <p>Color: {product.color}</p>
                   <p>Precio: {product.precio}</p>
                 </Card.Text>
-                <Link to={`/detalles-producto/${product._id}`}> {/* Enlaza a la página de detalles del producto */}
+                <Link to={`/detalles-producto/${product._id}`}> 
                   <Button variant="primary">Ver detalles</Button>
                 </Link>
               </Card.Body>

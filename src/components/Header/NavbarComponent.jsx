@@ -11,20 +11,19 @@ export const
     return (
       <Navbar expand="lg" className="bg-body-tertiary">
         <Container>
-          <Nav.Link as={Link} to="/PROYECTO-ECOMMERCE-ClasicsShoes/home">
+          <Nav.Link as={Link} to="/">
             <img src={logo} alt="Logo de Classics Shoes" />
           </Nav.Link>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="me-auto">
-              <Nav.Link as={Link} to="/PROYECTO-ECOMMERCE-ClasicsShoes/home">Home</Nav.Link>
-              <Nav.Link as={Link} to="/PROYECTO-ECOMMERCE-ClasicsShoes/catalogo">Catalogo</Nav.Link>
-              <Nav.Link as={Link} to="/PROYECTO-ECOMMERCE-ClasicsShoes/miPerfil">Mi Perfil</Nav.Link>
-              <NavDropdown title="Inicia sesión/Registrate" id="basic-nav-dropdown">
-                <NavDropdown.Item as={Link} to="/PROYECTO-ECOMMERCE-ClasicsShoes/login">
+              <Nav.Link as={Link} to="/home">Home</Nav.Link>
+              <Nav.Link as={Link} to="/catalogo">Catalogo</Nav.Link>
+              <NavDropdown title="Inicia sesión" id="basic-nav-dropdown">
+                <NavDropdown.Item as={Link} to="/login">
                   Inicia Sesión
                 </NavDropdown.Item>
-                <NavDropdown.Item as={Link} to="/PROYECTO-ECOMMERCE-ClasicsShoes/signup">
+                <NavDropdown.Item as={Link} to="/signup">
                   Registrate
                 </NavDropdown.Item>
               </NavDropdown>
