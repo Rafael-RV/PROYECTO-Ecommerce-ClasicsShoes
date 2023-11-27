@@ -24,7 +24,7 @@ function App() {
         <Route path='/signup' element={<SignUp />} />
         <Route path='/catalogo' element={<CatalogoRoute />} />
         <Route path='/detalles-producto/:productId' element={<Details />} />
-        <Route path='/miPerfil' element={<PerfilRoute />} />
+        <Route path='/profile' element={<PerfilRoute />} />
       </Routes>
       <Footer />
     </UserProvider>

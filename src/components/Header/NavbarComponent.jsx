@@ -4,7 +4,7 @@ import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
 import { Link } from 'react-router-dom';
 import logo from '../../img/logo.png';
-import '../../CSS/header.css'
+import '../../CSS/header.css';
 
 export const
   NavbarComponent = () => {

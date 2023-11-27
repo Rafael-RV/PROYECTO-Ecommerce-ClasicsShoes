@@ -3,6 +3,7 @@ import { useParams } from 'react-router-dom';
 import { useApiProducts } from '../../services/products';
 import { Container, Row, Col, Image } from 'react-bootstrap';
 import '../../CSS/DetailsShoes.css'
+import { MercadoPagoButton } from '../Mercado-Pago/MercadoPagoButton';
 
 export const DetailsShoes = () => {
   const { productId } = useParams();
@@ -33,7 +34,7 @@ export const DetailsShoes = () => {
               <p>Modelo: {productDetails.modelo}</p>
               <p>Color: {productDetails.color}</p>
               <p>Precio: {productDetails.precio}</p>
-            
+            <MercadoPagoButton/>
             </div>
           </Col>
         </Row>

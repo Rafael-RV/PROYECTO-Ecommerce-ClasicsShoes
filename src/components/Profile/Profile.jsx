@@ -3,13 +3,13 @@ import { UserContext } from "../../contextApi/UserContext";
 import { useContext } from "react";
 
 
-export const MiPerfil = () => {
+export const profile = () => {
 
   const {mail} = useContext(UserContext);
 
   return (
     <div>
-      <h1>{mail}</h1>
+      <h1>hola</h1>
     </div>
   )
 }

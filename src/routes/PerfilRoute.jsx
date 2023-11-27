@@ -1,9 +1,9 @@
-import { MiPerfil } from "../components/Mi-Perfil/MiPerfil"
+import { Profile } from "../components/Profile/Profile"
 
 export const PerfilRoute = () => {
   return (
     <>
-      <MiPerfil/>
+<Profile/>
     </>
   )
 }

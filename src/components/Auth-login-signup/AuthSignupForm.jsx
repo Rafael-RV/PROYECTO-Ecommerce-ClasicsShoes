@@ -1,10 +1,11 @@
-import {  useState } from "react";
+import { useState, useContext } from "react";
 import { signupService } from "../../services/user";
+import { Link } from "react-router-dom";
+import { UserContext } from "../../contextApi/UserContext";
 import '../../CSS/login.css';
 
-
 export const AuthSignupForm = () => {
-  
+    const { token, setToken } = useContext(UserContext);
 
     const [formData, setFormData] = useState({
         nombre: "",
@@ -29,7 +30,6 @@ export const AuthSignupForm = () => {
             });
             console.log(userData);
             setToken(userData.detail.token);
-            
 
             // Limpiar los campos después de una respuesta exitosa
             setFormData({
@@ -108,7 +108,8 @@ export const AuthSignupForm = () => {
                     />
                 </div>
 
-                <button type="submit">Submit</button>
+                <button type="submit">Enviar</button>
+                <p>¿Ya tienes una cuenta? <Link to="/login">Inicia sesión</Link></p>
             </form>
         </section>
     );

@@ -1,10 +1,13 @@
 import { useContext, useState } from "react";
+import { useHistory } from 'react-router-dom';
 import { loginService } from "../../services/user";
 import { UserContext } from "../../contextApi/UserContext";
+import { Link } from "react-router-dom";
 import '../../CSS/login.css';
 
 export const AuthLoginForm = () => {
-    const { token, setToken} = useContext(UserContext);
+    const { token, setToken } = useContext(UserContext);
+    const history = useHistory();
 
     const [formData, setFormData] = useState({
         mail: "",
@@ -29,13 +32,16 @@ export const AuthLoginForm = () => {
 
             console.log(userData);
             setToken(userData.detail.token);
-            
 
             // Limpiar los campos después de una respuesta exitosa
             setFormData({
                 mail: "",
                 password: ""
             });
+
+            // Redirigir a la página de perfil
+            history.push('/miPerfil');
+
         } catch (error) {
             console.error("Error al enviar el formulario:", error);
             // Mostrar mensaje de error al usuario
@@ -54,7 +60,7 @@ export const AuthLoginForm = () => {
         <section className="login-section">
             <div className="background-image"></div>
             <div className="login-form">
-               
+
                 <form onSubmit={onSubmit}>
                     <h3>Login</h3>
                     <div>
@@ -78,11 +84,10 @@ export const AuthLoginForm = () => {
                         />
                     </div>
 
-                    <button type="submit">Submit</button>
+                    <button type="submit">Enviar</button>
+                    <p>¿No tienes una cuenta? <Link to="/signup">Regístrate</Link></p>
                 </form>
             </div>
         </section>
     );
 };
-
-
