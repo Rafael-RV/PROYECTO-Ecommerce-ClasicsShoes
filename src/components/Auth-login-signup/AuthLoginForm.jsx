@@ -1,13 +1,14 @@
-import { useContext, useState } from "react";
-import { useHistory } from 'react-router-dom';
+import React, { useContext, useState } from "react";
+import { useNavigate } from 'react-router-dom';
 import { loginService } from "../../services/user";
 import { UserContext } from "../../contextApi/UserContext";
+import { Profile } from "../ProfileComp/Profile";
 import { Link } from "react-router-dom";
 import '../../CSS/login.css';
 
 export const AuthLoginForm = () => {
-    const { token, setToken } = useContext(UserContext);
-    const history = useHistory();
+    const { token, setToken, user, setUser, setIsAuth, logout } = useContext(UserContext);
+    const navigate = useNavigate();
 
     const [formData, setFormData] = useState({
         mail: "",
@@ -30,8 +31,12 @@ export const AuthLoginForm = () => {
                 password,
             });
 
-            console.log(userData);
             setToken(userData.detail.token);
+
+            // Puedes guardar más información del usuario si es necesario
+            setUser(userData.detail.user);
+
+            setIsAuth(true); // Establece la autenticación en true
 
             // Limpiar los campos después de una respuesta exitosa
             setFormData({
@@ -40,7 +45,7 @@ export const AuthLoginForm = () => {
             });
 
             // Redirigir a la página de perfil
-            history.push('/miPerfil');
+            navigate('/profile');
 
         } catch (error) {
             console.error("Error al enviar el formulario:", error);
@@ -87,6 +92,16 @@ export const AuthLoginForm = () => {
                     <button type="submit">Enviar</button>
                     <p>¿No tienes una cuenta? <Link to="/signup">Regístrate</Link></p>
                 </form>
+
+                {token && (
+                    <div>
+                        {/* Muestra el perfil del usuario si hay una sesión activa */}
+                        <Profile user={user} />
+                        
+                        {/* Botón de cierre de sesión */}
+                        <button onClick={logout}>Cerrar sesión</button>
+                    </div>
+                )}
             </div>
         </section>
     );

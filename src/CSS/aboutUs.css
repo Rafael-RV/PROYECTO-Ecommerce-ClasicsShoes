@@ -24,8 +24,9 @@
     color: #333; /* Color del texto */
   }
   
-  h3{
+  .bienvenidos{
     display: flex;
     justify-content: center;
     color: rgb(27, 21, 21);
+    font-size: 30px;
   }

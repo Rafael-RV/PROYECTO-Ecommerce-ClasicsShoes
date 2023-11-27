@@ -1,10 +1,10 @@
 import React from 'react'
-import { CatalogoPage } from '../components/Catalogo/CatalogoPage'
+import { CatalogoComp } from '../components/Catalogo/CatalogoComp'
 
 export const CatalogoRoute = () => {
   return (
     <div>
-      <CatalogoPage/>
+      <CatalogoComp/>
     </div>
   )
 }

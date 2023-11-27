@@ -7,7 +7,7 @@ import Card from 'react-bootstrap/Card';
 import Button from 'react-bootstrap/Button';
 import '../../CSS/catalogPage.css';
 
-export const CatalogoPage = () => {
+export const CatalogoComp = () => {
   const { data } = useApiProducts();
 
   return (

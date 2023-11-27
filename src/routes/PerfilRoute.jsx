@@ -1,4 +1,5 @@
-import { Profile } from "../components/Profile/Profile"
+import { Profile } from "../components/ProfileComp/Profile"
+
 
 export const PerfilRoute = () => {
   return (
