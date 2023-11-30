@@ -2,7 +2,7 @@
 
 import { useState, useEffect } from "react";
 
-const API_URL = "https://clasics-shoes-api.onrender.com/V1/products";
+const API_URL = "https://clasics-shoes-api.onrender.com/v1/products";
 
 export const useApiProducts = () => {
   const [data, setData] = useState(null);
