@@ -29,7 +29,7 @@ export const DetailsShoes = () => {
 
       if (!isNaN(unitPrice)) {
         const response = await axios.post(
-          "https://clasics-shoes-api.onrender.com/Mercado_Pago",
+          "https://clasics-shoes-api.onrender.com/v1/Mercado_Pago",
           {
             title: productDetails.modelo,
             unit_price: productDetails.precio,
