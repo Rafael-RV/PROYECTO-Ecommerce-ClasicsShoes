@@ -13,15 +13,18 @@ const AboutUs = () => {
             />
             <div className="about-us-description">
 
-                <p className='bienvenidos'>Bienvenidos a ClasicsShoes</p> Donde la elegancia y la tradición estan desde 1897 y 
-                se fusionan para crear un calzado excepcional. En nuestro rincón artesanal,
-                la pasión por los detalles y la dedicación a la artesanía tradicional
-                se encuentran con cada par de zapatos que creamos.
+                <p className='bienvenidos'>Bienvenidos a ClasicsShoes</p>
 
-                En cada paso de nuestro proceso de fabricación, desde la selección
-                del cuero fino hasta la meticulosa atención al detalle en cada costura,
-                nuestros artesanos expertos trabajan incansablemente para dar vida a
-                zapatos que no solo son una prenda, sino una expresión de estilo y sofisticación.
+                <p > Donde la elegancia y la tradición estan desde 1897 y
+                    se fusionan para crear un calzado excepcional. En nuestro rincón artesanal,
+                    la pasión por los detalles y la dedicación a la artesanía tradicional
+                    se encuentran con cada par de zapatos que creamos.
+
+                    En cada paso de nuestro proceso de fabricación, desde la selección
+                    del cuero fino hasta la meticulosa atención al detalle en cada costura,
+                    nuestros artesanos expertos trabajan incansablemente para dar vida a
+                    zapatos que no solo son una prenda, sino una expresión de estilo y sofisticación.
+                </p>
             </div>
         </div>
     );

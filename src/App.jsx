@@ -10,7 +10,7 @@ import { PerfilRoute } from './routes/PerfilRoute';
 import { Footer } from './components/Footer/Footer';
 import { Home } from './routes/Home';
 import { CatalogoRoute } from './routes/CatalogRoute';
-import { Details } from './routes/DetailsRoute';
+import {  DetailsShoes } from './routes/DetailsShoes';
 
 
 function App() {
@@ -23,7 +23,7 @@ function App() {
         <Route path='/login' element={<Login />} />
         <Route path='/signup' element={<SignUp />} />
         <Route path='/catalogo' element={<CatalogoRoute />} />
-        <Route path='/detalles-producto/:productId' element={<Details />} />
+        <Route path='/detalles-producto/:productId' element={<DetailsShoes />} />
         <Route path='/profile' element={<PerfilRoute />} />
       </Routes>
       <Footer />

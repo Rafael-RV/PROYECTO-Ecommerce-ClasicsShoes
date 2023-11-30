@@ -67,7 +67,7 @@ export const AuthLoginForm = () => {
             <div className="login-form">
 
                 <form onSubmit={onSubmit}>
-                    <h3>Login</h3>
+                    <h3>Inicia Sesión</h3>
                     <div>
                         <label htmlFor="mail">Email</label>
                         <input
@@ -93,15 +93,6 @@ export const AuthLoginForm = () => {
                     <p>¿No tienes una cuenta? <Link to="/signup">Regístrate</Link></p>
                 </form>
 
-                {token && (
-                    <div>
-                        {/* Muestra el perfil del usuario si hay una sesión activa */}
-                        <Profile user={user} />
-                        
-                        {/* Botón de cierre de sesión */}
-                        <button onClick={logout}>Cerrar sesión</button>
-                    </div>
-                )}
             </div>
         </section>
     );

@@ -1,7 +1,5 @@
-// componentes/Catalogo/CatalogoPage.jsx
-
 import React from "react";
-import { Link } from 'react-router-dom'; // Importa Link
+import { Link } from 'react-router-dom';
 import { useApiProducts } from "../../services/products";
 import Card from 'react-bootstrap/Card';
 import Button from 'react-bootstrap/Button';
@@ -20,8 +18,9 @@ export const CatalogoComp = () => {
               <Card.Body>
                 <Card.Title>{product.modelo}</Card.Title>
                 <Card.Text>
-                  <p>Color: {product.color}</p>
-                  <p>Precio: {product.precio}</p>
+                  Color: {product.color}
+                  <br />
+                  Precio: {product.precio} CLP
                 </Card.Text>
                 <Link to={`/detalles-producto/${product._id}`}> 
                   <Button variant="primary">Ver detalles</Button>

@@ -2,7 +2,7 @@ import { useState, useContext } from "react";
 import { signupService } from "../../services/user";
 import { Link } from "react-router-dom";
 import { UserContext } from "../../contextApi/UserContext";
-import '../../CSS/login.css';
+
 
 export const AuthSignupForm = () => {
     const { token, setToken } = useContext(UserContext);

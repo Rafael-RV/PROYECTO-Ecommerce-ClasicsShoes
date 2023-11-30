@@ -3,8 +3,9 @@ import ReactDOM from 'react-dom';
 import App from './App.jsx';
 import { HashRouter } from 'react-router-dom';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import { createRoot } from 'react-dom/client';
 
-ReactDOM.createRoot(document.getElementById('root')).render(
+createRoot(document.getElementById('root')).render(
   <HashRouter>
     <React.StrictMode>
       <App />
