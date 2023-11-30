@@ -25,23 +25,21 @@ export const DetailsShoes = () => {
 
   const FuncionComprar = async () => {
     try {
-      const unitPrice = parseFloat(productDetails.precio);
 
-      if (!isNaN(unitPrice)) {
         const response = await axios.post(
+          
           "https://clasics-shoes-api.onrender.com/v1/Mercado_Pago",
+   
           {
-            title: productDetails.modelo,
-            unit_price: productDetails.precio,
+            modelo: productDetails.modelo,
+            precio: productDetails.precio,
             currency_id: "CLP",
             quantity: 1,
           }
         );
 
         window.location.href = response.data;
-      } else {
-        alert("El precio del producto no es un número válido.");
-      }
+
     } catch (error) {
       console.error("Error en la solicitud:", error);
       if (error.response) {
