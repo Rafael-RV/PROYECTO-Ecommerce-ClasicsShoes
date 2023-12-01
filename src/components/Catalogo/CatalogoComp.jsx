@@ -10,6 +10,7 @@ export const CatalogoComp = () => {
 
   return (
     <div className='catalog-container'>
+      
       {data && (
         <div className='card-container'>
           {data.map((product) => (

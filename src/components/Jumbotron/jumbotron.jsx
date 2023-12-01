@@ -35,7 +35,7 @@ export const Jumbotron = () => {
             </Carousel>
 
             <div className="jumbotron-text">
-                <h1>Descubre la Elegancia en Cada Paso</h1>
+                <h1 className='jumbotron-title'>Descubre la Elegancia en Cada Paso</h1>
                 <p>Bienvenido a nuestra colección exclusiva de calzado artesanal. Cada par cuenta una historia de elegancia y tradición, cuidadosamente elaborado con los mejores materiales y atención al detalle.</p>
             </div>
         </div>

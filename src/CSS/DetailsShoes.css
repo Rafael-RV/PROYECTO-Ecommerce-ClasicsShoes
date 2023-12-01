@@ -13,7 +13,7 @@ h2 {
   margin-bottom: 20px;
 }
 
-/* Detalles del producto */
+
 .row {
   margin-top: 20px;
 }
@@ -22,7 +22,7 @@ h2 {
   max-width: 100%;
   height: auto;
   margin-bottom: 20px;
-  border-radius: 8px; /* Añadido para bordes redondeados en la imagen */
+  border-radius: 8px;
 }
 
 .row p {

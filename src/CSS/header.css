@@ -1,12 +1,43 @@
 
-/* header.css */
 
-.NavbarComponent {
-    background-color: red;
-    padding: 10px;
-  }
-  
-  .NavbarComponent img {
-    max-height: 50px;
-  }
-  
+
+
+.header {
+  background-color:  #fcf7ef;/* Ajusta el color de fondo según tus preferencias */
+  padding: 15px 0; /* Ajusta el espacio interno del Navbar */
+}
+
+.navBar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  max-height: 50px; /* Ajusta la altura máxima de tu logo según tus preferencias */
+}
+
+.nav-link {
+  color: #333; /* Ajusta el color del texto de los enlaces */
+  font-size: 16px; /* Ajusta el tamaño de la fuente según tus preferencias */
+  margin-right: 15px; /* Agrega espacio entre los enlaces */
+  text-decoration: none;
+}
+
+.nav-link:hover {
+  color: #007bff; /* Cambia el color del texto al pasar el ratón */
+}
+
+.logout-navbar-button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 8px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.logout-navbar-button:hover {
+  background-color: #0056b3;
+}
+

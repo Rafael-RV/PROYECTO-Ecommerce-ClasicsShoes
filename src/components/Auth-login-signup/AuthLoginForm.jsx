@@ -2,12 +2,12 @@ import React, { useContext, useState } from "react";
 import { useNavigate } from 'react-router-dom';
 import { loginService } from "../../services/user";
 import { UserContext } from "../../contextApi/UserContext";
-import { Profile } from "../ProfileComp/Profile";
+
 import { Link } from "react-router-dom";
 import '../../CSS/login.css';
 
 export const AuthLoginForm = () => {
-    const { token, setToken, user, setUser, setIsAuth, logout } = useContext(UserContext);
+    const {  setToken, setUser, setIsAuth } = useContext(UserContext);
     const navigate = useNavigate();
 
     const [formData, setFormData] = useState({

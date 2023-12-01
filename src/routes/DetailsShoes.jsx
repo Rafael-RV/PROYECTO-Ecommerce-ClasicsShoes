@@ -68,7 +68,7 @@ export const DetailsShoes = () => {
               <p>Precio: {productDetails.precio} CLP</p>
               {token ? (
                 <div>
-                  <button onClick={FuncionComprar}>Comprar</button>
+                  <button onClick={FuncionComprar} className="btn btn-primary btn-comprar">Comprar</button>
                 </div>
               ) : (
                 <p>Inicia sesión para comprar</p>

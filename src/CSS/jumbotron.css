@@ -3,10 +3,14 @@
 .jumbotron-container {
   width: 60%;
   margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .carousel {
-  width: 100%;
+  width: 70%;
 }
 
 .carousel-item {
@@ -31,4 +35,8 @@
 .jumbotron-text p {
   font-size: 1.2em;
   color: #666;
+}
+
+.jumbotron-title {
+  font-style: italic;
 }

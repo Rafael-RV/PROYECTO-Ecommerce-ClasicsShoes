@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import Button from 'react-bootstrap/Button';
+import '../../CSS/CatalogButton.css';
 
 export const CatalogButton = () => {
   const [isLoading, setLoading] = useState(false);
@@ -20,7 +21,7 @@ export const CatalogButton = () => {
   const handleClick = () => setLoading(true);
 
   return (
-    <div className="centered-container">
+    <div className="Container-catalog ">
       <Link to="/catalogo">
         <Button
           variant="primary"

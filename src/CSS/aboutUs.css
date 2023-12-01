@@ -28,5 +28,6 @@
     display: flex;
     justify-content: center;
     color: rgb(27, 21, 21);
-    font-size: 30px;
+    font-size: 40px;
+    font-style: italic;
   }

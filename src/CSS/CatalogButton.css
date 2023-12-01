@@ -1,0 +1,28 @@
+
+/* Puedes ajustar estos estilos según tus preferencias */
+.Container-catalog {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 30px;
+  height: 0;
+  ;
+}
+
+.ver-catalogo-btn {
+  /* Estilos específicos del botón */
+  background-color: #007bff;
+  color: #ffffff;
+  font-size: 16px;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+
+  /* Agrega estilos de transición para una animación suave al pasar el ratón */
+  transition: background-color 0.3s ease;
+}
+
+/* Cambia el color de fondo cuando el ratón pasa sobre el botón */
+.ver-catalogo-btn:hover {
+  background-color: #0056b3;
+}
