@@ -1,8 +1,12 @@
-# React + Vite
+Proyecto Ecommerce. Clasics Shoes.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Este proyecto tiene por tematica una tienda de zapatos formales. Siendo este el repositorio que guarda el Front End 
+del proyecto, el repositorio que guarda el Back End es el sigueinte  "https://github.com/Rafael-RV/PROYECTO-Server-ClasicsShoes.git"
 
-Currently, two official plugins are available:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Tener en cuenta lo siguiente:
+
+Este proyecto trabaja con una versión gratuita de render por lo que las peticiones pueden tardar hasta un minuto.
+
+URL de render:  https://clasics-shoes-api.onrender.com/v1/products
+
