@@ -1,8 +1,8 @@
-import { useState, useContext } from "react";
+import React, { useState, useContext } from "react";
 import { signupService } from "../../services/user";
 import { Link } from "react-router-dom";
 import { UserContext } from "../../contextApi/UserContext";
-
+import Button from 'react-bootstrap/Button';
 
 export const AuthSignupForm = () => {
     const { token, setToken } = useContext(UserContext);
@@ -108,7 +108,7 @@ export const AuthSignupForm = () => {
                     />
                 </div>
 
-                <button type="submit">Enviar</button>
+                <Button type="submit" variant="primary" className="rounded">Enviar</Button>
                 <p>¿Ya tienes una cuenta? <Link to="/login">Inicia sesión</Link></p>
             </form>
         </section>

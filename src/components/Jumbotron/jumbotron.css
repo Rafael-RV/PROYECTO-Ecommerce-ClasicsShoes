@@ -1,0 +1,21 @@
+.carousel {
+  width: 70%;
+}
+
+.carousel-item {
+  text-align: center;
+}
+
+.carousel-image {
+  width: 100%;
+  height: auto;
+}
+
+.jumbotron-text {
+  text-align: center;
+  padding: 20px;
+}
+
+.jumbotron-title {
+  font-style: italic;
+}

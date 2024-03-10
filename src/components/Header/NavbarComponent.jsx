@@ -6,7 +6,7 @@ import NavDropdown from 'react-bootstrap/NavDropdown';
 import { Link, useNavigate } from 'react-router-dom';
 import logo from '../../img/logo.png';
 import { UserContext } from '../../contextApi/UserContext';
-import '../../CSS/header.css';
+import '../Header/header.css';
 
 export const NavbarComponent = () => {
   const { isAuth, logout } = useContext(UserContext);

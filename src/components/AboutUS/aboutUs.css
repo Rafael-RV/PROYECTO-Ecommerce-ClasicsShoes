@@ -1,0 +1,22 @@
+/* aboutUs.css */
+
+.about-us-container {
+  padding: 20px;
+}
+
+.about-us-image {
+  max-width: 100%;
+  height: auto;
+}
+
+.about-us-description {
+  margin-top: 20px;
+  text-align: justify; 
+}
+
+.bienvenidos {
+  font-size: 30px; 
+  font-weight: bold;
+  text-align: center; 
+  font-style: italic; 
+}

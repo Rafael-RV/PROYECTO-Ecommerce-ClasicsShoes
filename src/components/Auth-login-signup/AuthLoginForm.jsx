@@ -2,9 +2,8 @@ import React, { useContext, useState } from "react";
 import { useNavigate } from 'react-router-dom';
 import { loginService } from "../../services/user";
 import { UserContext } from "../../contextApi/UserContext";
-
 import { Link } from "react-router-dom";
-import '../../CSS/login.css';
+import '../Auth-login-signup/login.css';
 
 export const AuthLoginForm = () => {
     const {  setToken, setUser, setIsAuth } = useContext(UserContext);
@@ -88,8 +87,8 @@ export const AuthLoginForm = () => {
                             onChange={handleInputChange}
                         />
                     </div>
-
-                    <button type="submit">Enviar</button>
+                    <button type="submit" className="btn btn-primary btn-rounded">Enviar</button>
+                   
                     <p>¿No tienes una cuenta? <Link to="/signup">Regístrate</Link></p>
                 </form>
 

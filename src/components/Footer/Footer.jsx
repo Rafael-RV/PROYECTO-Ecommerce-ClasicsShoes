@@ -2,7 +2,7 @@
 
 import { Link } from 'react-router-dom';
 import React from 'react';
-import '../../CSS/footer.css';
+import '../Footer/footer.css';
 
 export const Footer = () => {
   return (

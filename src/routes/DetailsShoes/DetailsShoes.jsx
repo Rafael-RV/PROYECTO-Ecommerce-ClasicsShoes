@@ -1,10 +1,10 @@
 import { useEffect, useState, useContext } from 'react';
 import { useParams } from 'react-router-dom';
-import { useApiProducts } from '../services/products';
+import { useApiProducts } from '../../services/products';
 import { Container, Row, Col, Image } from 'react-bootstrap';
 import axios from 'axios';
-import { UserContext } from '../contextApi/UserContext';
-import '../CSS/DetailsShoes.css';
+import { UserContext } from '../../contextApi/UserContext';
+import '../DetailsShoes/DetailsShoes.css';
 
 export const DetailsShoes = () => {
   const { productId } = useParams();

@@ -10,7 +10,7 @@ import { PerfilRoute } from './routes/PerfilRoute';
 import { Footer } from './components/Footer/Footer';
 import { Home } from './routes/Home';
 import { CatalogoRoute } from './routes/CatalogRoute';
-import {  DetailsShoes } from './routes/DetailsShoes';
+import {  DetailsShoes } from './routes/DetailsShoes/DetailsShoes';
 
 
 function App() {

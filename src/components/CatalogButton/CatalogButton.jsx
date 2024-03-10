@@ -1,35 +1,14 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 import { Link } from 'react-router-dom';
 import Button from 'react-bootstrap/Button';
-import '../../CSS/CatalogButton.css';
+import '../CatalogButton/CatalogButton.css';
 
 export const CatalogButton = () => {
-  const [isLoading, setLoading] = useState(false);
-
-  useEffect(() => {
-    function simulateNetworkRequest() {
-      return new Promise((resolve) => setTimeout(resolve, 2000));
-    }
-
-    if (isLoading) {
-      simulateNetworkRequest().then(() => {
-        setLoading(false);
-      });
-    }
-  }, [isLoading]);
-
-  const handleClick = () => setLoading(true);
-
   return (
-    <div className="Container-catalog ">
+    <div className="Container-catalog">
       <Link to="/catalogo">
-        <Button
-          variant="primary"
-          disabled={isLoading}
-          onClick={!isLoading ? handleClick : null}
-          className="ver-catalogo-btn"
-        >
-          {isLoading ? 'Loading…' : 'Ver Catálogo'}
+        <Button variant="primary" className="ver-catalogo-btn">
+          Ver Catálogo
         </Button>
       </Link>
     </div>
